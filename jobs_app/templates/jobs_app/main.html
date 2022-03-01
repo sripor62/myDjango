@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/821b707580.js" crossorigin="anonymous"></script>
+    <style >
+
+    body{
+
+      /* background-image: rgb(255,247,245); */
+    }
+    .profile{
+      font-family: 'Lato', sans-serif;
+      text-align:center;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      padding:20px;
+      top:0px;
+      margin-left: 220px;
+max-height: 600px;
+    }
+    .profile1{
+      font-family: 'Lato', sans-serif;
+      text-align:center;
+      width: 470px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      padding:20px;
+
+      margin-top: 0px;
+      margin-left:30px;
+max-height: 600px;
+    }
+    .profile__image{
+      width:150px;
+      height:150px;
+      object-fit:cover;
+      border-radius: 50%;
+      margin:0 auto 20px auto;
+      display:auto;
+    }
+    .container1{
+  background:#fff;
+max-width:1000px;
+margin:auto;
+-webkit-box-shadow:2px 2px 13px -4px rgba(0,0,0,0.4);
+
+box-shadow: 0px 0px 10px black;
+padding:5px;
+max-height:1000px;
+margin-top:80px;
+}
+
+.cover{
+  padding-left:10px;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Gideon Roman', cursive;
+}
+.header-bar{
+display:flex;
+justify-content:space-between;
+color:#fff;
+padding-top:10px;
+margin-bottom:0px;
+margin-top:0px;
+border-radius:3px 5px 0 0;
+background:linear-gradient(90deg,rgb(247, 126, 101) 0%,rgb(252, 110, 81) 43%, rgb(252, 87, 53) 100%);
+}
+.header-bar a{
+color:white;
+text-decoration:none;
+}
+
+.task-wrapper{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:20px;
+background:#fff;
+border-top:1px solid rgb(226,226,226);
+}
+.task-title{
+display:flex;
+}
+.task-title a{
+text-decoration:none;
+color:rgba(0,0,0,0.5);
+margin-left:10px;
+}
+.task-complete-icon{
+height:20px;
+width:20px;
+background:rgb(105,192,105);
+border-radius:50%;
+}
+.task-incomplete-icon{
+height:20px;
+width:20px;
+background:rgb(218,218,218);
+border-radius:50%;
+}
+.delete-link{
+text-decoration:none;
+color:#cf4949;
+font-weight:900;
+font-size:22px;
+line-height:0;
+}
+#add-link{
+color:#EB796F;
+text-decoration-none;
+font-size:42px;
+text-shadow:1px 1px #81413b;
+}
+input[type=text],
+input[type=password],
+textarea{border:1px solid #EB796F;
+border-radius:5px;
+padding:10px;
+width:90%;
+
+}
+.card-body{
+padding:20px;
+
+}
+label{
+padding-top:10px !important
+display:block;
+}
+.button{
+border:1px solid #EB796F;
+background:#FAFAFA;
+color:#EB796F;
+padding:10px;
+font-size:14px;
+border-radius:5px;
+cursor:pointer;
+text-decoration:none;
+
+}
+#search-add-wrapper{
+display:flex;
+justify-content:space-between;
+align-items-center;
+padding:10px;
+}
+.cover_up{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  list-style:none;
+  text-decoration:none;
+
+}
+.wrapper{
+  display:flex;
+  position:relative;
+}
+.wrapper .sidebar{
+  position:fixed;
+  width:200px;
+  height:100%;
+  background:rgb(252, 110, 81);
+
+  padding:30px 0;
+}
+.main_content{display:flex;
+  margin-left:200px;
+}
+.wrapper .sidebar h2{
+  color:#fff;
+  text-transform:uppercase;
+  text-align:center;
+  margin-bottom:30px;
+}
+.wrapper .sidebar ul li{
+  padding:15px;
+  border-bottom:1px solid rgba(0,0,0,0.05);
+  border-top:1px solid rgba(225,225,225,0.05);
+}
+.wrapper .sidebar ul li a{
+  color:rgb(31, 34, 38);
+  display:block;
+  text-decoration:none;
+}
+.wrapper .sidebar ul li a .fas{
+  width:25px;
+}
+.wrapper .sidebar ul li:hover{
+  background:rgb(255,247,245);
+  /* background:transparent; */
+}
+.wrapper .sidebar ul li:hover a{
+  color:rgb(31,34,38);
+}
+.image_slider{
+
+background-size:100% 100%;
+  height:660px;
+  background-image:url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2020/04/WeWork_CommonArea_Couches-1-1440x810.jpg);
+animation:slider 30s infinite linear;
+}
+@keyframes slider{
+  0%{background-image:url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2020/04/WeWork_CommonArea_Couches-1-1440x810.jpg);}
+
+  35%{background-image:url(https://png.pngtree.com/thumb_back/fw800/png-vector/20200530/ourmid/pngtree-indoor-office-png-image_2215289.jpg);}
+  75%{background-image:url(https://media.istockphoto.com/photos/rendering-of-a-large-green-office-space-picture-id1298318343?b=1&k=20&m=1298318343&s=170667a&w=0&h=mj-DKXEeMCX3yKWsFtDZmjlGbDZ5_cf6fZ6XltsvIK4=);}
+}
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+{% block content %}
+{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{% extends 'jobs_app/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+
+
+<h2>Hello {{request.user}} :)</h2>
+</div>
+<div class="cover_up">
+
+
+<div class="wrapper">
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="{% url 'jobs_app:home' %}"><i class="fa-solid fa-house"></i>Home</a></li>
+{% if user.is_authenticated %}
+              <li><a href="{% url 'accounts:logout' %}"><i class="fa-solid fa-lock"></i>Logout</a></li>
+{% endif %}
+    </ul>
+
+  </div>
+
+</div>
+
+</div>
+<br>
+<br>
+<div class="main_content">
+
+
+<h6>Name : {{commpany.user.username}}</h6>
+<h6>Email : {{company.user.email}}</h6>
+<h6>Phone number :{{company.phone}}</h6>
+<h6>Expertise in  : {{company.looking_for}}</h6>
+<img src="{{request.user.application.profile_pic.url}}" alt="Not available">
+</div>
+{% endblock %}

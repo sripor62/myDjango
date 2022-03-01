@@ -1,0 +1,17 @@
+{% extends 'jobs_app/main.html'%}
+{% block content %}
+
+<div class="header-bar">
+
+<h1>Create Your Profile</h1>
+</div>
+<div class="container1">
+
+
+<form method="post" emctype="multipart/form-data">
+{{ form.as_p }}
+{% csrf_token %}
+<input type="submit" value="Create" class="button">
+</form>
+</div>
+{% endblock %}

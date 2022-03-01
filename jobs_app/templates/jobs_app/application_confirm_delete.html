@@ -1,0 +1,16 @@
+{%extends 'jobs_app/main.html' %}
+{% block content %}
+<div class="container1">
+
+
+<div class="card-body">
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <h2>Are you sure you want to delete your profile ?</h2>
+    <input type="submit" value="Confirm" class="button">
+  </form>
+</div>
+</div>
+{% endblock %}

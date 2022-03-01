@@ -1,0 +1,28 @@
+{% extends 'jobs_app/main.html' %}
+{% block content %}
+<div class="header-bar">
+
+<h1>Here is a world of exploring tech world</h1>
+</div>
+{% include 'recruitor/_side1.html' %}
+<div class="main_content">
+<div class="cover">
+
+{% for task in tasks1 %}
+<a href="{% url 'recruitor:detail1' %}"><h2 style="color:rgb(87, 83, 72);">{{task}}</h2>
+<i><p style="color:rgb(87, 83, 72);">{{task.email}}</p></i></a>
+{% if request.user.is_authenticated and request.user == task.user %}
+<span>
+<a href="{% url 'recruitor:delete1' task.id %}"><i class="fa-solid fa-trash-can"></i></a></span>
+<span>
+<a href="{% url 'recruitor:update1' task.id  %}"><i class="fa-solid fa-pen"></i></a>
+</span>
+{% endif %}
+{% empty %}
+<h3>This is empty</h3>
+
+</div>
+</div>
+{% endfor %}
+
+{% endblock %}

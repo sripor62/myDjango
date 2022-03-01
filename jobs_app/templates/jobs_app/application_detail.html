@@ -1,0 +1,40 @@
+{% extends 'jobs_app/main.html' %}
+{% block content %}
+
+<div class="cover_up">
+
+
+<div class="wrapper">
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="{% url 'jobs_app:home' %}"><i class="fa-solid fa-house"></i>Home</a></li>
+
+              <li><a href="{% url 'accounts:logout' %}"><i class="fa-solid fa-lock"></i>Logout</a></li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+</div>
+<br>
+<br>
+<div class="main_content">
+
+<div class="profile">
+<img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="" class="profile__image">
+<div class="profile__name">Name : {{application.user.username}}</div>
+<div class="profile__title">Email : {{application.user.email}}</div>
+<div class="profile__detail">Phone number :{{application.phone}}</div>
+<h6>Gender : {{application.gender}}</h6>
+</div>
+<div class="profile1">
+  <h5>Hi {{request.user.username}}</h5>
+  <h3>Educational qualification(institution last attended) : {{application.Education_last}}</h3>
+  <h3>Skills : {{application.skills}}</h3>
+  <h3>Achievements : {{application.achievements}}</h3>
+</div>
+</div>
+{% endblock %}
